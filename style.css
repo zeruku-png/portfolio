@@ -1,0 +1,91 @@
+
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "07にくまるフォント"
+}
+
+.sep-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(20px);
+    transition: filter 0.8s ease-in;
+}
+
+.header {
+    display:flex;
+    position:fixed;
+    background-color: aliceblue;
+    padding: 0 10%;
+    width: 100%;
+    height: 8vh;
+    align-items: center;
+    z-index: 99999999;
+}
+.nav {
+    margin-left: auto;
+}
+.nav-item {
+    font-size: 20px;
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+.fv {
+    height: 100vh;
+    background-color: #9ea4a6;
+}
+.skill {
+    display: flex;
+    height: 94vh;
+    background-color: #709174;
+}
+
+.skill .l {
+    width: 45vw;
+}
+
+.skill .r {
+    background-color: #fff;
+    width: 55vw;
+}
+
+.career {
+    display: flex;
+    height: 94vh;
+    background-color: #f8ff72;
+}
+
+.career .l {
+    background-color: #ffffff;
+    width: 55vw;
+}
+
+.career .r {
+    background-color: #bdff94;
+    width: 45vw;
+}
+
+.contact {
+    display: flex;
+    height: 94vh;
+    background-color: #af9fff;
+}
+
+.contact .l {
+    width: 45vw;
+}
+
+.contact .r {
+    background-color: #fff;
+    width: 55vw;
+}
