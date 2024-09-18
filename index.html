@@ -1,41 +1,56 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>zeruku portfolio</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <header>
-            <div class="header" name="top">
-                <h1>zeruku</h1>
-                <ul class="nav">
-                    <li class="nav-item"><a href="#top">Top</a></li>
-                    <li class="nav-item"><a href="#skill">Skill</a></li>
-                    <li class="nav-item"><a href="#career">Career</a></li>
-                    <li class="nav-item"><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </header>
-        <main>
-            <div class="fv"></div>
-            <div class="skill" name="skill">
-                <div class="l">
-                    <img class="sep-img" src="img/mock.png" alt="" />
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zeruku portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header" name="top">
+            <h1>zeruku</h1>
+            <ul class="nav">
+                <li class="nav-item"><a href="#top">Top</a></li>
+                <li class="nav-item"><a href="#skill">Skill</a></li>
+                <li class="nav-item"><a href="#career">Career</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="fv"></div>
+        <div class="main-content">
+            <div class="skill">
+                <div class="skill-card scroll-up" name="skill">
+                    <div class="l">
+                        <img class="sep-img" src="img/skill-img.png" alt="" />
+                    </div>
+                    <div class="r noimg">text</div>
                 </div>
-                <div class="r"></div>
             </div>
-            <div class="career" name="career">
-                <div class="l"></div>
-                <div class="r"></div>
+            <div class="career">
+                <div class="career-card scroll-up" name="career">
+                    <div class="l noimg"></div>
+                    <div class="r"><img class="sep-img" src="img/mock.png" alt="" /></div>
+                </div>
             </div>
-            <div class="contact" name="contact">
-                <div class="l"></div>
-                <div class="r"></div>
+            <div class="contact">
+                <div class="contact-card scroll-up" name="contact">
+                    <div class="l">
+                        <img class="sep-img" src="img/mock.png" alt="" />
+                    </div>
+                    <div class="r noimg"></div>
+                </div>
             </div>
-        </main>
-        <footer></footer>
-    </body>
-    <script src="./scripts/script.js"></script>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+
 </html>
