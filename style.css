@@ -4,23 +4,20 @@
 
 a {
     text-decoration: none;
-    color: #000000;
+    color: #000;
+    transition: 0.01s;
+}
+a:hover {
+    color: #fff;
 }
 
 body {
     margin: 0;
-    padding: 0;
-    font-family: "07にくまるフォント"
+    font-family: "07にくまるフォント";
+    background-size: cover;
+    background-image: url("./img/_.jpeg");
+    background-attachment: fixed;
 }
-
-
-.sep-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    filter: blur(20px);
-}
-
 .header {
     display: flex;
     position: fixed;
@@ -31,6 +28,7 @@ body {
     align-items: center;
     z-index: 99999999;
     opacity: 80%;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 .nav {
@@ -44,84 +42,18 @@ body {
     padding: 20px;
 }
 
-.fv {
+.main {
+    height: 3000px;
+    width: 100%;
+}
+
+.fv{
+    width: 100%;
     height: 100vh;
-    width: 100vw;
-    background-color: #9ea4a6;
+    object-fit: cover;
 }
 
-.skill,
-.career,
-.contact {
-    height: 92vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.skill-card,
-.career-card,
-.contact-card {
-    display: flex;
-    margin: 0 10vw;
-    width: 80%;
-    height: 80%;
-}
-
-.noimg {
-    padding: 20px;
-}
-
-.skill {
-    background-color: #709174;
-}
-
-.career {
-    background-color: #72b4b6;
-}
-
-.contact {
-    background-color: #ba88d1;
-}
-
-
-.skill-card .l {
-    width: 45vw;
-    overflow: hidden;
-}
-
-.skill-card .r {
-    background-color: #424454;
-    width: 55vw;
-}
-
-
-.career-card .l {
-    background-color: #ffffff;
-    width: 55vw;
-}
-
-.career-card .r {
-    background-color: #bdff94;
-    width: 45vw;
-}
-
-.contact .l {
-    width: 45vw;
-}
-
-.contact .r {
+.fv .card-1 {
+    height: 100vh;
     background-color: #fff;
-    width: 55vw;
-}
-
-.scroll-up {
-    transition: 0.5s ease-in-out;
-    transform: translateY(30px);
-    opacity: 0;
-}
-
-.scroll-up.on {
-    transform: translateY(0);
-    opacity: 1.0;
 }
