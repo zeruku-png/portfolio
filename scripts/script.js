@@ -5,7 +5,6 @@ let hideTimeout;
 
 function handleScroll() {
     if (window.scrollY > lastScrollY) {
-        // スクロールダウン
         if (isVisible) {
             clearTimeout(hideTimeout);
             header.style.transition =
@@ -20,7 +19,6 @@ function handleScroll() {
             isVisible = false;
         }
     } else {
-        // スクロールアップ
         if (!isVisible) {
             clearTimeout(hideTimeout);
             header.style.transition =
