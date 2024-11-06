@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bentham&family=Noto+Serif+Tamil:ital,wght@0,100..900;1,100..900&family=Sree+Krushnadevaraya&display=swap');
 
 body {
-    background-image: url("./fvbg.jpg");
+    background-image: url("https://zeruku.com/assets/VRChat_2024-11-05_19-59-42.091_3840x2160.png");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    background-color: rgba(0, 0, 0, 1);
+    background-blend-mode: lighten;
+
+
+
 
 }
 
@@ -13,14 +18,14 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings:
-        "wdth" 100;
+        "wdth"100;
 }
 
 /* ローディング画面 */
 #loading {
     width: 100vw;
     height: 100vh;
-    transition: all 1s;
+    transition: all 1.5s;
     background-color: rgb(0, 0, 0);
 
     position: fixed;
@@ -38,9 +43,9 @@ body {
 header {
     width: 100%;
     height: 10vh;
-    color: #1d1d1d;
-    background-color: #ffffff;
-    opacity: 0.6;
+    color: white;
+    background-color: #202020;
+    opacity: 1;
     position: absolute;
     bottom: 0;
 
@@ -53,6 +58,26 @@ header {
         h1 {
             font-size: 20px;
             margin-right: auto;
+        }
+
+        .item-profile {
+            font-size: 16px;
+            transition: all 0.4s;
+        }
+
+        .item-profile.big {
+            transform: scale(1.25);
+        }
+
+        .fd-stc {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.4s ease, visibility 0.25s ease;
+        }
+
+        .fd-stc.show {
+            opacity: 1;
+            visibility: visible;
         }
 
         .menu-item {
@@ -81,9 +106,10 @@ header {
 
     h1 {
         position: fixed;
-        font-size: 50px;
+        font-size: 40px;
         font-weight: 500;
-        top: 40vh;
+        top: 48vh;
+        left: 20vw;
         text-align: center;
         opacity: 1;
         z-index: 1;
@@ -109,7 +135,7 @@ header {
 /* profile */
 .profile {
     height: auto;
-    padding: 30vh 15% 15vh 15%;
+    padding: 25vh 15% 15vh 15%;
 
     .profile-card {
         height: auto;
@@ -169,13 +195,4 @@ header {
 
 }
 
-/* works */
-.works {
-    height: auto;
-
-    .content {
-        display: grid;
-        gap: 0;
-        grid-template-columns: repeat(4, 25%);
-    }
-}
+/* gallery */

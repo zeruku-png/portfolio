@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(window).scroll(function () {
         $(".fv-title").css("opacity", function () {
-            return 1 - $(window).scrollTop() / 500;
+            return 1 - $(window).scrollTop() / 400;
         });
     });
 });
@@ -20,8 +20,12 @@ $(function () {
         $window.on("scroll", function () {
             if ($window.scrollTop() > headerBoxTop) {
                 $header.addClass("sticky");
+                $(".fd-stc").addClass("show");
+                $(".item-profile").removeClass("big");
             } else {
                 $header.removeClass("sticky");
+                $(".fd-stc").removeClass("show");
+                $(".item-profile").addClass("big");
             }
         });
         $window.trigger("scroll");
