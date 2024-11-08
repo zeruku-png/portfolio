@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(window).scroll(function () {
         $(".fv-title").css("opacity", function () {
-            return 1 - $(window).scrollTop() / 400;
+            return 1 - $(window).scrollTop() / ($(window).height() / 3);
         });
     });
 });
