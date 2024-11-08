@@ -3,6 +3,9 @@ $(document).ready(function () {
         $(".fv-title").css("opacity", function () {
             return 1 - $(window).scrollTop() / ($(window).height() / 3);
         });
+        $("body").css("background-position-y", function () {
+            return -$(window).scrollTop() / 5;
+        });
     });
 });
 

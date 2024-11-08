@@ -5,6 +5,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    background-position-y: 0px;
 }
 
 .fnt {
@@ -12,7 +13,7 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings:
-        "wdth" 100;
+        "wdth"100;
 }
 
 /* ローディング画面 */
@@ -123,7 +124,7 @@ header {
 .chapter {
     background-color: #202020;
     width: 100%;
-    padding: 15vh 8%;
+    padding: 20vh 10vw;
 }
 
 /* profile */
@@ -190,3 +191,4 @@ header {
 }
 
 /* gallery */
+.gallery {}
