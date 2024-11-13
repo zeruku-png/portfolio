@@ -13,7 +13,7 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings:
-        "wdth"100;
+        "wdth" 100;
 }
 
 /* ローディング画面 */
@@ -252,8 +252,7 @@ header {
 .skill {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 20px;
-    padding: 25vh 8% 10vh 8%;
+    gap: 40px;
 
 
     .box {
@@ -262,6 +261,7 @@ header {
         background-color: #fff;
         align-items: center;
         text-align: center;
+        border-radius: 0 10px 0 10px;
 
         .icon {
             height: 20%;
@@ -277,6 +277,7 @@ header {
 
         .lang-title {
             font-size: 30px;
+            margin-bottom: 20px;
         }
     }
 }
