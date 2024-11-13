@@ -249,7 +249,37 @@ header {
 }
 
 /* skill */
-.skill {}
+.skill {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    padding: 25vh 8% 10vh 8%;
+
+
+    .box {
+        padding: 20px 10px;
+        height: 40vh;
+        background-color: #fff;
+        align-items: center;
+        text-align: center;
+
+        .icon {
+            height: 20%;
+            align-items: center;
+
+            img {
+                display: block;
+                margin: auto;
+                width: auto;
+                height: 100%;
+            }
+        }
+
+        .lang-title {
+            font-size: 30px;
+        }
+    }
+}
 
 /* footer */
 footer {
